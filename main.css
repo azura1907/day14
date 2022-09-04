@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #35a22c;
+    --white: #fff;
+    --black: #000;
+    --grey: #aaa;
+}
+
+.nav-logo i {
+    color: var(--primary);
+    font-size: 45px;
+}
+
+.nav-logo span {
+    color: var(--white);
+    font-size: 45px;
+}
+
+
+.nav-toggle-btn {
+    background: var(--primary);
+
+}
+
+.nav-toggle-btn span {
+    color: var(--grey);
+}
+
+.nav-collapse-custom.show {
+    background: var(--white);
+}
+
+.nav-collapse-custom.show a {
+    color: var(--primary);
+}
+
+.nav-collapse-custom.show li:hover {
+    background: var(--primary);
+}
+
+.nav-collapse-custom.show li:hover a {
+    color: var(--white);
+}
+
+.nav-collapse-custom.show li:hover a.acitve {
+    color: var(--white) !important;
+}
+
+/* desktop */
+
+.nav-collapse-custom a {
+    color: var(--white);
+}
+
+.nav-collapse-custom li:hover a {
+    color: var(--primary);
+}
+
+.nav-collapse-custom li:hover a.acitve {
+    color: var(--white) !important;
+}
+
+.nav-collapse-custom li {
+    position: relative;
+    margin-left: 5px;
+}
+
+.nav-collapse-custom li::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    position: absolute;
+    background: var(--primary);
+    transition: 0.4s;
+}
+
+.nav-collapse-custom li:hover::after {
+    width: 100%;
+}
+
+/* end desktop */
+
+/* carousel*/
+
+.carousel-item {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+.carousel-indicators-custom {
+    margin-bottom: 80px;
+}
+
+.carousel-indicators-custom button {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators-custom button.active {
+    background-color: #35a22c !important;
+}
+
+.carousel-caption-custom {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.carousel-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* end carousel */
+
+/* available */
+#available {
+    background-image: url(img/3.jpg);
+    position: relative;
+}
+
+#available::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 300;
+}
+
+.card {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.custom-card i {
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.custom-card:hover {
+    background: #000;
+    border: 1px solid #fff;
+    transition: 0.4s;
+}
+
+/* end available */
+
+/* archivemnent*/
+.archivement-left {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.archivement-image {
+    width: 100px;
+    height: 100px;
+}
+
+#archivement .background-image {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    width: 500px;
+    height: 250px;
+    opacity: .6;
+}
+
+.container .archivement-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* end archivemnet */
+
+/* footer */
+#footer {
+    height: 100px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.logos i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+}
+
+.separate {
+    width: 100%;
+    height: 1px solid #fff;
+}
+
+/* end footer */
